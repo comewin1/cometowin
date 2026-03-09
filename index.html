@@ -11,43 +11,57 @@ margin:0;
 font-family:Arial;
 text-align:center;
 color:white;
-
 background:url('virat.jpg.jpeg');
 background-size:cover;
 background-position:center;
 }
 
 .overlay{
-background:rgba(0,0,0,0.6);
+background:rgba(0,0,0,0.65);
 min-height:100vh;
-padding-top:50px;
+padding-top:60px;
 }
 
-/* RAINBOW TITLE */
+/* TITLE ANIMATION */
 
 .title{
 font-size:40px;
 font-weight:bold;
-animation:rainbow 5s linear infinite;
+animation:rainbow 6s linear infinite;
 }
 
 @keyframes rainbow{
-0%{color:red}
-20%{color:orange}
-40%{color:yellow}
-60%{color:lime}
-80%{color:cyan}
-100%{color:magenta}
+0%{color:#ff0000}
+20%{color:#ff8c00}
+40%{color:#ffff00}
+60%{color:#00ff00}
+80%{color:#00ffff}
+100%{color:#ff00ff}
 }
 
-/* GLOW TEXT */
+/* SUBTITLE */
 
 .subtitle{
 color:#00ffe7;
 font-size:22px;
-text-shadow:0 0 10px #00ffe7,
-0 0 20px #00ffe7,
-0 0 30px #00ffe7;
+text-shadow:0 0 10px #00ffe7,0 0 20px #00ffe7;
+}
+
+/* FIRST TEXT COLOR */
+
+.color1{
+background:linear-gradient(90deg,#00ffff,#00ff99,#00ffff);
+-webkit-background-clip:text;
+color:transparent;
+font-weight:bold;
+}
+
+/* SECOND TEXT COLOR */
+
+.color2{
+color:#ffd700;
+font-weight:bold;
+text-shadow:0 0 10px #ffd700;
 }
 
 /* BUTTON */
@@ -56,19 +70,18 @@ text-shadow:0 0 10px #00ffe7,
 display:inline-block;
 margin:25px;
 padding:15px 30px;
-background:black;
-border:2px solid white;
+background:linear-gradient(45deg,#ff0066,#ffcc00,#00ffcc);
 border-radius:12px;
 font-size:18px;
 text-decoration:none;
 color:white;
-transition:0.3s;
+animation:pulse 1.5s infinite;
 }
 
-.button:hover{
-background:#00ffe7;
-color:black;
-transform:scale(1.05);
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.07)}
+100%{transform:scale(1)}
 }
 
 /* TIMER */
@@ -105,14 +118,7 @@ transition:0.4s;
 .images img:hover{
 transform:scale(1.05);
 }
-.color1{
-  color:#00ffe7;
-  font-weight:bold
-}
-  .color2{
-    color:#ffcc00
-    font-weight:bold;
-  }
+
 </style>
 </head>
 
@@ -128,17 +134,18 @@ GURU BHAI PRO
 CRICKET PREDICTION KING
 </div>
 
-<p>
-Most Famous & Punter Ka Masiha Guru Bhai
-<br><br>
+<br>
+
+<p class="color1">
+Most Famous & Punter Ka Masiha Guru Bhai<br>
 Asia's No 1 Team Predictions Channel
 </p>
 
-<p>DAILY PRIME WINNING TEAMS 💯</p>
+<p class="color2">
+DAILY PRIME WINNING TEAMS 💯<br><br>
 
-<p>
-20/20 PASS GUARANTEE <br>
-IPL 70/74 MATCH PASS <br>
+20/20 PASS GUARANTEE<br>
+IPL 70/74 MATCH PASS<br>
 TNPL 32/34 MATCH PASS
 </p>
 
@@ -162,7 +169,7 @@ TNPL 32/34 MATCH PASS
 </div>
 
 <a class="button" href="https://t.me/+tbKkP_rO4H1mMTY1">
-CLICK here to join
+CLICK HERE TO JOIN
 </a>
 
 </div>
